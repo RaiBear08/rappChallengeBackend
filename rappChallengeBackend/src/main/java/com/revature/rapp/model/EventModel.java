@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Entity
 @Table(name="tblevent")
-public class eventModel implements Serializable {
+public class EventModel implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	@Id
@@ -29,6 +29,20 @@ public class eventModel implements Serializable {
 	@Column(name="eventname")
 	private String eventname;
 	
+	public String getEventlocation() {
+		return eventlocation;
+	}
+
+
+	public void setEventlocation(String eventlocation) {
+		this.eventlocation = eventlocation;
+	}
+
+
+	@Valid
+	@NotBlank
+	@Column(name="eventlocation")
+	private String eventlocation;
 	
 	@Valid
 	@NotBlank

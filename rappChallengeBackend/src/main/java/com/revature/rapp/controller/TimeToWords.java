@@ -1,6 +1,6 @@
 package com.revature.rapp.controller;
 
-public class timetowords {
+public class TimeToWords {
 
     // Complete the timeInWords function below.
     static String timeInWords(int h, int m) {
